@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khayal Collective | Peer Support + Debate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Khayal Collective home">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span>Khayal Collective</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#how">How it works</a>
+      <a href="#support">Get support</a>
+      <a href="#classes">Debate classes</a>
+      <a href="#counselor">Counselor</a>
+      <a href="#signup">Sign up</a>
+      <a href="#staff-platform">Staff platform</a>
+      <a href="#safety">Safety</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Peer support for students</p>
+        <h1 id="hero-title">Talk to a trained peer. Learn to speak up with care.</h1>
+        <p class="hero-text">
+          Khayal Collective is a student peer-support platform where teens can ask for help, get matched with a trained peer mentor, and build debate skills for clearer, kinder conversations.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#support">Get support</a>
+          <a class="button secondary" href="#classes">Learn debate</a>
+          <a class="button secondary" href="#counselor">Connect with counselor</a>
+          <a class="button secondary" href="#signup">Sign up</a>
+        </div>
+        <div class="trust-strip" aria-label="Platform basics">
+          <span>For students</span>
+          <span>Optional anonymity</span>
+          <span>Clear safety boundaries</span>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/listening-circle.svg" alt="Students in a calm listening circle with notes and speech cards." />
+        <figcaption class="hero-panel">
+          <span>Live pathway</span>
+          <strong>Peer support + debate classes + counselor access</strong>
+          <p>One calm route from asking for help to learning how to speak with confidence.</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="notice" aria-label="Emergency support note">
+      <strong>If this is urgent:</strong>
+      This website is not emergency care. If you or someone else may be in immediate danger, contact local emergency services or a trusted adult now. In the U.S. or Canada, call or text <strong>988</strong> for crisis support.
+    </section>
+
+    <section class="signal-band" aria-label="Platform trust signals">
+      <article>
+        <span>24-48 hrs</span>
+        <p>Target match window during school days</p>
+      </article>
+      <article>
+        <span>3 roles</span>
+        <p>Students, debate trainers, and counselors</p>
+      </article>
+      <article>
+        <span>Boundaried</span>
+        <p>Clear escalation and confidentiality rules</p>
+      </article>
+      <article>
+        <span>Skill-based</span>
+        <p>Debate taught as listening, evidence, and care</p>
+      </article>
+    </section>
+
+    <section id="about" class="split-section" aria-labelledby="about-title">
+      <div>
+        <p class="section-kicker">About</p>
+        <h2 id="about-title">Why this exists</h2>
+      </div>
+      <div class="text-stack">
+        <p>
+          Many students carry stress about academics, friendships, identity, family pressure, and adjusting to school life. They may not always need formal counseling first, but they do need a safe first step.
+        </p>
+        <p>
+          Our mission is simple: make support easier to ask for, make listening easier to practice, and teach students how to disagree without harming each other.
+        </p>
+      </div>
+    </section>
+
+    <section id="how" class="how-section" aria-labelledby="how-title">
+      <div class="section-head">
+        <p class="section-kicker">How it works</p>
+        <h2 id="how-title">Four steps from request to follow-up</h2>
+      </div>
+      <div class="steps">
+        <article class="step-card">
+          <span>01</span>
+          <h3>Request support</h3>
+          <p>Share what kind of help you need, how you want to be contacted, and whether you want to stay anonymous at first.</p>
+        </article>
+        <article class="step-card">
+          <span>02</span>
+          <h3>Get matched</h3>
+          <p>A trained peer mentor is selected based on your topic, availability, and comfort preferences.</p>
+        </article>
+        <article class="step-card">
+          <span>03</span>
+          <h3>Talk</h3>
+          <p>You meet in a supervised, boundaried support space. Mentors listen, ask good questions, and help you plan the next step.</p>
+        </article>
+        <article class="step-card">
+          <span>04</span>
+          <h3>Follow up</h3>
+          <p>If needed, the team checks in again or helps connect you with a teacher, counselor, or trusted adult.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="support" class="support-section" aria-labelledby="support-title">
+      <div class="section-head">
+        <p class="section-kicker">Get support</p>
+        <h2 id="support-title">Start with a simple, private request.</h2>
+        <p class="muted">This demo form does not send data anywhere yet. In a real school launch, connect it to a secure form tool or backend approved by the school.</p>
+      </div>
+
+      <div class="support-layout">
+        <form class="support-form" id="supportForm">
+          <div class="form-row">
+            <label for="studentName">Name or nickname</label>
+            <input id="studentName" name="studentName" type="text" placeholder="You can use a first name or nickname" />
+          </div>
+
+          <div class="form-row">
+            <label for="helpType">What kind of help do you need?</label>
+            <select id="helpType" name="helpType" required>
+              <option value="">Choose one</option>
+              <option>Stress or anxiety</option>
+              <option>Academics or study pressure</option>
+              <option>Friendship or conflict</option>
+              <option>Adjusting to school</option>
+              <option>Speaking up or debate confidence</option>
+              <option>Connect me with a counselor</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Preferred contact method</legend>
+            <label class="choice"><input type="radio" name="contact" value="School email" required /> School email</label>
+            <label class="choice"><input type="radio" name="contact" value="In-person check-in" /> In-person check-in</label>
+            <label class="choice"><input type="radio" name="contact" value="Teacher/counselor message" /> Through a teacher or counselor</label>
+            <label class="choice"><input type="radio" name="contact" value="Counselor appointment request" /> Counselor appointment request</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Privacy preference</legend>
+            <label class="choice"><input type="checkbox" id="anonymous" name="anonymous" /> I want to stay anonymous at first</label>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="message">What would you like support with?</label>
+            <textarea id="message" name="message" rows="5" placeholder="Share only what feels okay to share."></textarea>
+          </div>
+
+          <button class="button primary" type="submit">Submit request</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="dashboard" aria-labelledby="dashboard-title">
+          <p class="section-kicker">Request dashboard</p>
+          <h3 id="dashboard-title">What happens after I submit?</h3>
+          <ol class="dashboard-list">
+            <li>Request received by the peer-support coordination team.</li>
+            <li>Safety check for urgent or high-risk concerns.</li>
+            <li>Match suggested within 24 to 48 school hours.</li>
+            <li>Session booked and follow-up option offered.</li>
+          </ol>
+          <div class="match-preview">
+            <span class="label">Matching looks at</span>
+            <p>Topic, comfort preference, availability, language, and whether escalation support is needed.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="debate-lab" class="lab" aria-labelledby="lab-title">
+      <div class="section-head">
+        <p class="section-kicker">Debate Lab</p>
+        <h2 id="lab-title">Debate is taught as a wellbeing skill.</h2>
+        <p class="muted">Students practice how to name a feeling, frame a claim, listen fairly, and disagree without attacking.</p>
+      </div>
+
+      <div class="lab-layout">
+        <div class="prompt-column">
+          <button class="topic active" type="button" data-topic="school">School wellbeing</button>
+          <button class="topic" type="button" data-topic="online">Online life</button>
+          <button class="topic" type="button" data-topic="community">Community care</button>
+        </div>
+        <article class="argument-card">
+          <span class="label">Practice motion</span>
+          <h3 id="motionText">Schools should teach emotional literacy as seriously as exam skills.</h3>
+          <div class="argument-steps">
+            <div>
+              <strong>Claim</strong>
+              <p id="claimText">Emotional literacy improves learning because students can manage stress before it becomes shutdown or conflict.</p>
+            </div>
+            <div>
+              <strong>Evidence</strong>
+              <p id="evidenceText">Use examples from classroom experience, attendance patterns, peer support, or wellbeing surveys.</p>
+            </div>
+            <div>
+              <strong>Respectful challenge</strong>
+              <p id="challengeText">Ask: how can schools protect academic time while still teaching these skills?</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="classes" class="classes-section" aria-labelledby="classes-title">
+      <div class="section-head">
+        <p class="section-kicker">Debate classes</p>
+        <h2 id="classes-title">Learn debate through guided classes.</h2>
+        <p class="muted">Students can join short classes that teach speaking, listening, evidence, and emotional regulation together.</p>
+      </div>
+
+      <div class="class-grid">
+        <article class="class-card">
+          <span>Beginner</span>
+          <h3>Speak with confidence</h3>
+          <p>Learn how to introduce yourself, make a simple claim, and speak without freezing.</p>
+          <small>4 sessions / small group</small>
+        </article>
+        <article class="class-card">
+          <span>Practice</span>
+          <h3>Build strong arguments</h3>
+          <p>Turn opinions into claims, reasons, examples, and evidence that others can understand.</p>
+          <small>6 sessions / weekly labs</small>
+        </article>
+        <article class="class-card">
+          <span>Advanced</span>
+          <h3>Respond with respect</h3>
+          <p>Practice rebuttals, cross-questioning, and disagreement without personal attacks.</p>
+          <small>8 sessions / showcase ready</small>
+        </article>
+      </div>
+
+      <form class="class-form" id="classForm">
+        <div class="form-row">
+          <label for="className">Name or nickname</label>
+          <input id="className" type="text" placeholder="Student name" />
+        </div>
+        <div class="form-row">
+          <label for="classLevel">Choose a class</label>
+          <select id="classLevel" required>
+            <option value="">Choose one</option>
+            <option>Beginner: Speak with confidence</option>
+            <option>Practice: Build strong arguments</option>
+            <option>Advanced: Respond with respect</option>
+          </select>
+        </div>
+        <button class="button primary" type="submit">Join debate class</button>
+        <p class="form-note" id="classNote" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="volunteers" class="volunteer-section" aria-labelledby="volunteer-title">
+      <div class="section-head">
+        <p class="section-kicker">Peer mentors</p>
+        <h2 id="volunteer-title">Who supports students?</h2>
+      </div>
+      <div class="mentor-grid">
+        <article class="mentor-card">
+          <h3>Trained student volunteers</h3>
+          <p>Mentors learn active listening, confidentiality rules, basic referral steps, and debate facilitation.</p>
+        </article>
+        <article class="mentor-card">
+          <h3>Clear role</h3>
+          <p>They help students feel heard, organize thoughts, practice difficult conversations, and identify next steps.</p>
+        </article>
+        <article class="mentor-card warning-card">
+          <h3>Not therapists</h3>
+          <p>Peer mentors are not professional therapists, counselors, or medical providers. Serious concerns are referred to trained adults.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="counselor" class="counselor-section" aria-labelledby="counselor-title">
+      <div class="section-head">
+        <p class="section-kicker">Counselor support</p>
+        <h2 id="counselor-title">Connect with a counselor when you need adult support.</h2>
+        <p class="muted">Choose this option for heavier stress, safety concerns, ongoing emotional difficulty, or anything you do not want to handle through peer support.</p>
+      </div>
+
+      <div class="counselor-layout">
+        <form class="counselor-form" id="counselorForm">
+          <div class="form-row">
+            <label for="counselorName">Name or student ID</label>
+            <input id="counselorName" type="text" placeholder="Use what your school requires" required />
+          </div>
+          <div class="form-row">
+            <label for="counselorReason">Reason for counselor connection</label>
+            <select id="counselorReason" required>
+              <option value="">Choose one</option>
+              <option>Stress feels too heavy</option>
+              <option>Safety concern</option>
+              <option>Family or personal issue</option>
+              <option>Conflict or bullying</option>
+              <option>I am not sure, but I need adult help</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="counselorTime">Preferred time</label>
+            <select id="counselorTime" required>
+              <option value="">Choose one</option>
+              <option>Before school</option>
+              <option>Lunch break</option>
+              <option>After school</option>
+              <option>As soon as possible</option>
+            </select>
+          </div>
+          <button class="button primary" type="submit">Request counselor connection</button>
+          <p class="form-note" id="counselorNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="counselor-card">
+          <h3>When to choose counselor support</h3>
+          <p>Use this path if you feel unsafe, overwhelmed, stuck for a long time, or need help from a trained adult. Peer mentors can listen, but counselors can provide formal school support.</p>
+          <a class="inline-link" href="#safety">Review safety boundaries</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="safety" class="safety-section" aria-labelledby="safety-title">
+      <div>
+        <p class="section-kicker">Safety and boundaries</p>
+        <h2 id="safety-title">Trust needs clear rules.</h2>
+      </div>
+      <div class="safety-grid">
+        <article>
+          <h3>Confidentiality</h3>
+          <p>Peer supporters keep conversations private within the program team, except when safety rules require help from a trusted adult.</p>
+        </article>
+        <article>
+          <h3>What peers can do</h3>
+          <p>Listen, help you sort thoughts, practice speaking up, share school resources, and support a next-step plan.</p>
+        </article>
+        <article>
+          <h3>What peers cannot do</h3>
+          <p>Diagnose, provide therapy, keep dangerous secrets, solve every problem, or replace counselors and guardians.</p>
+        </article>
+        <article>
+          <h3>When we escalate</h3>
+          <p>If there is risk of harm, abuse, serious crisis, or urgent safety concern, the team contacts a counselor, teacher, guardian, or emergency support according to school policy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources" class="resources" aria-labelledby="resources-title">
+      <div>
+        <p class="section-kicker">Resources hub</p>
+        <h2 id="resources-title">Quick help for common student situations.</h2>
+      </div>
+      <div class="resource-links">
+        <a href="https://www.nimh.nih.gov/health/topics/child-and-adolescent-mental-health" target="_blank" rel="noreferrer">Teen mental health basics</a>
+        <a href="https://988lifeline.org/" target="_blank" rel="noreferrer">Crisis support: 988 Lifeline</a>
+        <a href="https://www.unicef.org/parenting/mental-health" target="_blank" rel="noreferrer">Family wellbeing guides</a>
+        <a href="#debate-lab">Debate confidence practice</a>
+        <a href="#classes">Join debate classes</a>
+        <a href="#counselor">Connect with a counselor</a>
+      </div>
+    </section>
+
+    <section class="feedback-section" aria-labelledby="feedback-title">
+      <div class="section-head">
+        <p class="section-kicker">After support</p>
+        <h2 id="feedback-title">Feedback helps keep the system safe.</h2>
+      </div>
+      <form class="feedback-form" id="feedbackForm">
+        <label for="rating">How supported did you feel?</label>
+        <select id="rating" required>
+          <option value="">Choose one</option>
+          <option>Very supported</option>
+          <option>Somewhat supported</option>
+          <option>Not supported enough</option>
+        </select>
+        <label for="feedback">Anything the team should know?</label>
+        <textarea id="feedback" rows="4" placeholder="Optional"></textarea>
+        <button class="button secondary" type="submit">Send feedback</button>
+        <p class="form-note" id="feedbackNote" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="signup" class="signup-section" aria-labelledby="signup-title">
+      <div class="section-head">
+        <p class="section-kicker">Sign up</p>
+        <h2 id="signup-title">Choose how you want to join Khayal Collective.</h2>
+        <p class="muted">Students can join for support or debate classes. Trainers can teach debate skills. Counselors can provide adult support and supervision.</p>
+      </div>
+
+      <div class="role-grid" aria-label="Signup role options">
+        <article class="role-card">
+          <span>Student</span>
+          <h3>Get support or join debate classes</h3>
+          <p>For students who want peer support, counselor connection, or debate confidence practice.</p>
+        </article>
+        <article class="role-card">
+          <span>Trainer</span>
+          <h3>Teach debate classes</h3>
+          <p>For debate trainers who can teach speaking, argument-building, rebuttal, and respectful disagreement.</p>
+        </article>
+        <article class="role-card">
+          <span>Counselor</span>
+          <h3>Support student wellbeing</h3>
+          <p>For counselors who handle adult support, referrals, safety concerns, and follow-up care.</p>
+        </article>
+      </div>
+
+      <form class="signup-form" id="signupForm">
+        <div class="form-row">
+          <label for="signupRole">I am signing up as a</label>
+          <select id="signupRole" required>
+            <option value="">Choose one</option>
+            <option>Student</option>
+            <option>Trainer</option>
+            <option>Counselor</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="signupName">Name</label>
+          <input id="signupName" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" type="email" placeholder="name@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="signupGoal">What do you want to do?</label>
+          <textarea id="signupGoal" rows="4" placeholder="Example: join debate classes, teach debate, or connect students with counselor support."></textarea>
+        </div>
+        <button class="button primary" type="submit">Create signup request</button>
+        <p class="form-note" id="signupNote" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="staff-platform" class="staff-section" aria-labelledby="staff-title">
+      <div class="section-head">
+        <p class="section-kicker">Trainer and counselor platform</p>
+        <h2 id="staff-title">Track student records, session notes, files, and follow-ups.</h2>
+        <p class="muted">This prototype saves demo records in this browser only. A real launch should use login, permissions, consent rules, encryption, and school-approved data storage.</p>
+      </div>
+
+      <div class="staff-layout">
+        <form class="record-form" id="recordForm">
+          <div class="form-row">
+            <label for="staffRole">Record added by</label>
+            <select id="staffRole" required>
+              <option value="">Choose role</option>
+              <option>Trainer</option>
+              <option>Counselor</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="recordStudent">Student name or ID</label>
+            <input id="recordStudent" type="text" placeholder="Example: Student 1042 or first name" required />
+          </div>
+          <div class="form-row">
+            <label for="recordType">Record type</label>
+            <select id="recordType" required>
+              <option value="">Choose one</option>
+              <option>Debate class progress</option>
+              <option>Peer support follow-up</option>
+              <option>Counselor check-in</option>
+              <option>Risk or escalation note</option>
+              <option>Parent / teacher update</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="recordStatus">Status</label>
+            <select id="recordStatus" required>
+              <option>Open</option>
+              <option>Monitoring</option>
+              <option>Referred</option>
+              <option>Closed</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="recordFile">Upload file</label>
+            <input id="recordFile" type="file" />
+          </div>
+          <div class="form-row">
+            <label for="recordNotes">Notes or data</label>
+            <textarea id="recordNotes" rows="5" placeholder="Add session summary, debate progress, next steps, or counselor follow-up notes." required></textarea>
+          </div>
+          <button class="button primary" type="submit">Save student record</button>
+          <p class="form-note" id="recordNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="staff-panel">
+          <div class="staff-stats">
+            <article>
+              <span id="totalRecords">0</span>
+              <p>Total records</p>
+            </article>
+            <article>
+              <span id="openRecords">0</span>
+              <p>Open / monitoring</p>
+            </article>
+          </div>
+          <div class="staff-guidance">
+            <h3>Access rules</h3>
+            <p>Trainers should record learning progress and participation. Counselors should handle sensitive wellbeing notes, referrals, and safety follow-up.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="records-board" aria-labelledby="records-title">
+        <div class="records-head">
+          <div>
+            <p class="section-kicker">Saved records</p>
+            <h3 id="records-title">Student tracking dashboard</h3>
+          </div>
+          <button class="button secondary" type="button" id="clearRecords">Clear demo records</button>
+        </div>
+        <div class="records-list" id="recordsList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2 id="contact-title">Reach the team</h2>
+      </div>
+      <div class="contact-card">
+        <p><strong>Student team:</strong> khayal.collective@school.example</p>
+        <p><strong>Teacher lead:</strong> wellbeing.teacher@school.example</p>
+        <p><strong>Counselor contact:</strong> counselor@school.example</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Khayal Collective is an MVP for requesting support, explaining safety, and teaching debate as a calm communication skill.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
